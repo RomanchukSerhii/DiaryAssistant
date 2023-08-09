@@ -11,14 +11,14 @@ import kotlinx.coroutines.flow.Flow
 interface TaskListDao {
 
     @Query("SELECT * FROM tasks")
-    fun getGeneralTaskList(): Flow<List<Task>>
+    fun getGeneralTaskList(): Flow<List<TaskDbModel>>
 
     @Query("SELECT * FROM tasks WHERE category=:category")
-    fun getCategoryTaskList(category: String)
+    fun getCategoryTaskList(category: String): Flow<List<TaskDbModel>>
 
     @Upsert
-    suspend fun upsertTask(task: Task)
+    suspend fun upsertTask(task: TaskDbModel)
 
     @Delete
-    suspend fun deleteTask(task: Task)
+    suspend fun deleteTask(task: TaskDbModel)
 }
