@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Diary Assistant</string>
+    <string name="task_diary">Щоденник задач</string>
+    <string name="shop_list">Список покупок</string>
 </resources>
