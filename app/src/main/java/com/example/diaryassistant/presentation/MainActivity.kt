@@ -1,7 +1,8 @@
-package com.example.diaryassistant
+package com.example.diaryassistant.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.diaryassistant.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

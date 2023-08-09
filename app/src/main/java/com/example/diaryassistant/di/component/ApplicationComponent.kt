@@ -9,7 +9,7 @@ import dagger.Component.Factory
 
 @ApplicationScope
 @Component(modules = [DataModule::class])
-class ApplicationComponent {
+interface ApplicationComponent {
 
     @Factory
     interface ApplicationComponentFactory {
