@@ -5,8 +5,9 @@ import com.example.diaryassistant.domain.TaskRepository
 import com.example.diaryassistant.domain.model.task.Task
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
+import javax.inject.Inject
 
-class TaskRepositoryImpl(
+class TaskRepositoryImpl @Inject constructor(
     private val taskListDao: TaskListDao,
     private val mapper: TaskMapper
 ) : TaskRepository {

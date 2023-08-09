@@ -2,8 +2,9 @@ package com.example.diaryassistant.data
 
 import com.example.diaryassistant.data.database.TaskDbModel
 import com.example.diaryassistant.domain.model.task.Task
+import javax.inject.Inject
 
-class TaskMapper {
+class TaskMapper @Inject constructor() {
     fun mapDbModelToEntity(dbModel: TaskDbModel): Task {
         return Task(
             id = dbModel.id,
